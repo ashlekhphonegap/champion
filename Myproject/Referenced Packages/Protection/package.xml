@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protection</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <namespacePrefix>protecitonTest</namespacePrefix>
+    <types>
+        <members>ProtectionLayer</members>
+        <members>ProtectionLayer_test</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CS_Testing__c.Enable__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>CS_Testing__c</members>
+        <name>CustomObject</name>
+    </types>
+    <version>29.0</version>
+</Package>

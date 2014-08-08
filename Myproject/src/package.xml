@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AuthorizeAIMPost</members>
+        <members>AuthorizeAIMStaticMethod</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AuhtorizeAIMPostUI</members>
+        <members>AuthorizeForm</members>
+        <name>ApexPage</name>
+    </types>
+    <version>15.0</version>
+</Package>

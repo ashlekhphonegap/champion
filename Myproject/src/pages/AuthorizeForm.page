@@ -1,0 +1,51 @@
+<apex:page controller="AuthorizeFormController">
+
+     <form method="post" id="authNetForm" action="https://test.authorize.net/gateway/transact.dll" target="_top">
+         <table>
+            <tr>
+                <th>Credit Card Number</th>
+                <td><input type="text" id="x_card_num" name="x_card_num" size="20" maxlength="16" /></td>
+            </tr>            
+            <tr>
+                <th>Expiration Date</th>
+                <td><input type="text" id="x_exp_date" name="x_exp_date" size="6" maxlength="6"/>(mmyy)</td>
+            </tr>                        
+        </table>
+         
+         		<!-- <input type="hidden" name="x_invoice_num" value='{!TO}' /> --> 
+         		<!-- <INPUT TYPE="HIDDEN" NAME="x_tran_key" VALUE="{!x_transaction}"/> -->
+                
+                <INPUT TYPE="HIDDEN" NAME="x_login" VALUE="{!x_login}"/>
+                <INPUT TYPE="HIDDEN" NAME="x_amount" VALUE="{!x_amount}"/>
+                <INPUT TYPE="HIDDEN" NAME="x_fp_hash" VALUE="{!x_fp_hash}"/>
+                <INPUT TYPE="HIDDEN" NAME="x_fp_timestamp" VALUE="{!x_fp_timestamp}"/>
+                <INPUT TYPE="HIDDEN" NAME="x_fp_sequence" VALUE="{!x_fp_sequence}"/>
+                <INPUT TYPE="HIDDEN" NAME="x_type" VALUE="AUTH_CAPTURE"/>
+                <INPUT TYPE="HIDDEN" NAME="x_method" VALUE="CC"/>
+                <INPUT TYPE="HIDDEN" NAME="x_relay_URL" VALUE="{!x_relay_URL}"/>
+                <INPUT TYPE="HIDDEN" NAME="x_version" VALUE="3.1"/>
+                <INPUT TYPE="HIDDEN" NAME="x_test_request" VALUE="false"/>
+                <INPUT TYPE="HIDDEN" NAME="x_invoice_num" VALUE="{!x_invoice_num}"/>
+                  <INPUT TYPE="HIDDEN" NAME="x_email" VALUE="{!x_email}"/>
+                
+                <!--<INPUT TYPE="HIDDEN" NAME="x_delim_data" VALUE="true"/>
+                <INPUT TYPE="HIDDEN" NAME="x_relay_response" VALUE="false"/>
+                <INPUT TYPE="HIDDEN" NAME="x_amount" VALUE="{!x_amount}"/>
+                
+                
+                  -->
+                
+<!--                 <INPUT TYPE="HIDDEN" NAME="x_login" VALUE="{!x_login}"/>
+                <INPUT TYPE="HIDDEN" NAME="x_method" VALUE="CC"/>
+                <INPUT TYPE="HIDDEN" NAME="x_version" VALUE="3.1"/>
+                <INPUT TYPE="HIDDEN" NAME="x_amount" VALUE="{!x_amount}"/>
+                
+ -->                
+              <!--   <INPUT TYPE="HIDDEN" NAME="x_delim_data" VALUE="false"/>
+                <INPUT TYPE="HIDDEN" NAME="x_relay_response" VALUE="TRUE"/>
+                <INPUT TYPE="HIDDEN" NAME="x_relay_URL" VALUE="{!x_relay_URL}"/>  -->
+                
+            <input type="submit" value="Submit the order"/>
+     </form>
+
+</apex:page>
