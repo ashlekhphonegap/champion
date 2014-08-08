@@ -3,11 +3,11 @@ public with sharing class AuthorizeAIMPost {
 	public string x_login{set;get;}
 	public string x_tran_key{set;get;}
 	public string transactionId{set;get;}
-	public string response{set;get;}
+	public string response{set;get;} 
 	
 	public Boolean result{set;get;}
 	
-	public UserInfo UserInfoInstance{set;get;}
+	public UserInfo UserInfoInstance{set;get;} 
 	
 	public  AuthorizeInfo authInstance {set;get;}
 	
